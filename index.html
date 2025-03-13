@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EIAFC_Daloa - Page d'accueil</title>
+</head>
+<body>
+    <!-- l'en-tete -->
+    <header id="header">
+        <div class="logo">
+            <img src="./image/logo.jpeg" alt="Le logo de EIAFC">
+        </div>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="" class="active">Accueil</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">Formations</a></li>
+                <li><a href="">Actualités</a></li>
+                <li><a href="">Galerie</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="toggle_button" onclick="toggleMenu();">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </div>
+
+    </header>
+
+    <!-- toggle_menu -->
+    <div class="toggle_menu">
+        <div class="logo">
+            <img src="./image/logo.jpeg" alt="logo EIAFC_Daloa">
+        </div>
+        <ul>
+            <li><a href="" class="active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                Accueil
+            </a>
+        </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                    A propos
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Formations
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                    Actualités
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                    Galerie
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay" onclick="toggleMenu();"></div>
+
+    <!-- La banniere -->
+    <div id="hero">
+        <h1><span>E</span>cole <span>I</span>nternationale des <span>A</span>ffaires des <span>F</span>inances et de la <span>C</span>omptablité</h1>
+        <h2>L'autre façon d'apprendre !</h2>
+        <a href="#" class="action_btn">
+            En savoir plus
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+    </div>
+
+    <!-- presentation -->
+    <div class="presentation">
+        <div class="intro_texte">
+            <h1>Bienvenue à EIAFC Daloa</h1>
+            <p>
+                L' <strong>école Internationale des Affaires des finances et de la comptabilité</strong>(EIAFC),
+                est une institution d'excellence spécialiée dans la formation des leaders de demain dans le domaine de la finance, de la comptabilité et des affaires.
+            </p>
+            <p>
+                Depuis notre création, nous formons des professionnels compétents et prets à relever les défis du monde moderne.
+                Avec une équipe d'enseignants expérimentés et un réseau de partenaires prestigieux comme <a href="https://www.hecgi.ma">HECGI</a> et <a href="https://wwwatlantique-ibs.net">AIBS</a>,
+                l'EIAFC est le choix idéal pour ceux qui souhaitent exceller dans leur carrière.
+            </p>
+            <a href="#" class="action_btn center_action">
+                En savoir plus
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+        <div class="intro_image">
+            <img src="./image/intro.jpg" alt="image de presentation">
+            <p>&copy;EIAFC-tous droit réservé</p>
+        </div>
+    </div>
+
+    <!-- Discours du fondateur -->
+    <section class="boss_speach">
+        <div class="speach_texte">
+            <h1>Discours du fondateur</h1>
+            <p>
+                <em>Chers étudiant, parents et partenaires,</em> C'est avec une immense fierté que je vous souhaite la bienvenue sur le site officiel <strong>EIAFC Daloa.</strong>
+                Depuis la création de notre établissement, notre mission a toujours été de former des esprits brillants, des leaders de demain,
+                pret à relever les défis de notre société en constante évolution.
+                Nous croyons fermement que chaque enfant possède un potentiel unique, et notre role est de l'aider à l'exploiter pleinement à travers une éducation de qualité,
+                un environnement d'aprentissage stimulant, et des valeurs de respect, de responsabilité et d'excellence.
+            </p>
+            <br>
+            <p>
+                Aujourd'hui plus que jamais, nous devons investir dans l'avenir de nos jeunes. 
+                Ensemble, nous pouvons batir une génération capabable de transformer positivement notre monde.
+            </p>
+            <br>
+            <p>
+                Je vous invite à découvrir notre école à travers ce site et à participer activement à cette belle aventure éducative.
+            </p>
+
+            <a href="#" class="action_btn">
+                En savoir plus
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+        <div class="boss_image">
+            <img src="./image/fonfa5.jpg" alt="image du fondateur">
+            <p><strong>Koné Fangagné,</strong> fondateur de <strong>EIAFC Daloa</strong></p>
+        </div>
+    </section>
+
+    <!-- les displomes -->
+    <section class="diplomes">
+        <h1>Nos diplomes</h1>
+        <div class="diplome_box">
+
+            <div class="diplome_carte">
+                <div class="icon_dip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                </div>
+                <h2>BTS(Brevet de Technicien Superieur) </h2>
+                <p>
+                    Le <strong>BTS</strong> est une formation professionnelle de deux ans qui permet aux étudiants d'acquérir des compétences techniques et pratiques dans divers domaines.
+                    Nos programmes BTS offrent une excellente opportunité d'integrer rapidement le monde du travail tout en bénéficiant d'une formation reconnue et respectée.
+                </p>
+                <a href="#" class="action_btn">
+                    Filières BTS
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+
+            <div class="diplome_carte">
+                <div class="icon_dip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                </div>
+                <h2>Licence</h2>
+                <p>
+                    La <strong>licence</strong> est un diplome universitaire qui se prepare en trois ans après le Baccalaureat.
+                    Elle permet aux étudiants d'acquérir des compétences connaissances appprofondies dans une discipline spécifique,
+                    ouvrant la voie à des postes de cardre intermédiaire ou à la poursuite d'études supérieures.
+                    Nos programmes de licence allient rigueur académique et compétences pratiques pour former des professionnels compétents et polyvalents.
+                </p>
+                <a href="#" class="action_btn">
+                    Filières Licence
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+
+            <div class="diplome_carte">
+                <div class="icon_dip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                </div>
+                <h2>Master</h2>
+                <p>
+                    Le <strong>Master</strong> est un diplome de haut niveau qui se prepare en deux ans après la Licence.
+                    Il permet aux étudiants de spécialiser dans un domaines précis et d'accéder à des postes à responsabilités dans leur secteur.
+                    Nos programmes de Master offrent une formation appprofondie, alliant théorie et pratique, pour preparer nos étudiants aux défis complexes du monde professionnel.
+                </p>
+                <a href="#" class="action_btn">
+                    Filières Master
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section valeurs -->
+    <section class="values">
+        <h1>Nos valeurs à EIAFC Daloa</h1>
+        <div class="value">
+            <span>Rigueur</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;">90%</div>
+            </div>
+        </div>
+      
+        <div class="value">
+            <span>Innovation</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;">85%</div>
+            </div>
+        </div>
+      
+        <div class="value">
+            <span>Solidarité</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+
+        <div class="value">
+            <span>Exellence</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 99%;">99%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Les actualités -->
+
+    <section class="actuality">
+        <div class="actual_texte">
+            <h1>Actualités</h1>
+            <p>
+                <h3>Remerciement à <strong>HECGI</strong></h3>
+                <p>
+                    C'est avec grand plaisir que je vous présente aujourd'hui un de nos partenaires clés, <strong>HECGI</strong>.
+                </p>
+                <p>
+                    HECGI est bien plus qu'une institution. C'est un véritable acteur dans le domaine de l'éducation et du développement des compétences,
+                    reconnu pour son engagement à former des leaders et des professionnels de demain. 
+                    Leur expertise, leur passion pour l'excellence et leur approche innovante en matière d'enseignement en font un partenaire de choix pour nous.
+                </p>
+                <p>
+                    Nous partageons avec HECGI une vision commune : celle d'offrir aux jeunes et aux professionnels les moyens de réussir dans un monde en constante évolution. 
+                    Leur contribution précieuse nous permet de repousser les limites et de relever de nouveaux défis.Merci à HECGI pour leur soutien, leur engagement, et leur confiance. 
+                    Ensemble, nous sommes convaincus que nous continuerons à transformer l'avenir, un projet à la fois.
+                </p>
+            </p>
+            <a href="#" class="action_btn">
+                Plus d'infos
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+
+        <div class="actual_image">
+            <img src="./image/actu1.jpg" alt="partenariats avec la tunisie">
+            <p><strong>EIAFC</strong>-parteneriat avec <a href="https://www.hecgi.ma">HECGI</a></p>
+        </div>
+    </section>
+
+    <!-- Les installations -->
+
+    <section class="installations">
+        <h2>Nos installations</h2>
+        <div class="inst_container">
+            <div class="carte_inst">
+                <img src="./image/installation2.jpg" alt="installation1">
+            </div>
+
+            <div class="carte_inst">
+                <img src="./image/installation1.jpg" alt="installation2">
+            </div>
+
+            <div class="carte_inst">
+                <img src="./image/installation3.jpg" alt="installation3">
+            </div>
+        </div>
+
+        <a href="#" class="action_btn">
+            En savoir plus
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+        </a>
+
+    </section>
+
+
+    <!-- section testimanial -->
+
+    <section class="testimonials">
+        <h1>Qu'est qu'on dit de nous ?</h1>
+        <div class="comments">
+            <div class="comment">
+                <div class="profil">
+                    <div class="profil_image">
+                        <img src="./image/man.jpg" alt="Profil">
+                    </div>
+                    <p>Nom de la personne</p>
+                </div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quis quos placeat aliquam quae, temporibus neque ipsum fuga expedita iusto. Molestiae at neque deserunt nostrum sit cupiditate dignissimos ut assumenda?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, iusto tempore facere quia quisquam optio? Dicta iusto quas laboriosam et, accusantium voluptates magnam. Exercitationem incidunt minima, corrupti molestiae laudantium amet.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum consequatur cum cupiditate eum ipsa ducimus, blanditiis explicabo magni neque mollitia eius quos cumque dolorum labore aut perferendis quae deserunt vero.
+                </p>
+            </div>
+
+            <div class="comment speciale">
+                <div class="profil">
+                    <div class="profil_image">
+                        <img src="./image/woman.jpg" alt="Profil">
+                    </div>
+                    <p>Nom de la personne</p>
+                </div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quis quos placeat aliquam quae, temporibus neque ipsum fuga expedita iusto. Molestiae at neque deserunt nostrum sit cupiditate dignissimos ut assumenda?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, iusto tempore facere quia quisquam optio? Dicta iusto quas laboriosam et, accusantium voluptates magnam. Exercitationem incidunt minima, corrupti molestiae laudantium amet.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum consequatur cum cupiditate eum ipsa ducimus, blanditiis explicabo magni neque mollitia eius quos cumque dolorum labore aut perferendis quae deserunt vero.
+                </p>
+            </div>
+
+            <div class="comment">
+                <div class="profil">
+                    <div class="profil_image">
+                        <img src="./image/woman2.jpg" alt="Profil">
+                    </div>
+                    <p>Nom de la personne</p>
+                </div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quis quos placeat aliquam quae, temporibus neque ipsum fuga expedita iusto. Molestiae at neque deserunt nostrum sit cupiditate dignissimos ut assumenda?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, iusto tempore facere quia quisquam optio? Dicta iusto quas laboriosam et, accusantium voluptates magnam. Exercitationem incidunt minima, corrupti molestiae laudantium amet.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum consequatur cum cupiditate eum ipsa ducimus, blanditiis explicabo magni neque mollitia eius quos cumque dolorum labore aut perferendis quae deserunt vero.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="downlod_container">
+        <!-- telechargement de la fiche de renseignement -->
+        <a href="./image/fiche_info.jpg" download="fiche_de_renseignement" class="action_btn">
+            télécharger la fiche de renseignement
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.8246 8.11033C12.7359 8.11033 12.648 8.12777 12.5661 8.16165C12.4841 8.19554 12.4097 8.2452 12.3469 8.3078C12.2842 8.37041 12.2345 8.44473 12.2005 8.52653C12.1666 8.60833 12.1491 8.696 12.1491 8.78454V11.4794C12.1491 11.6582 12.0779 11.8297 11.9513 11.9561C11.8246 12.0825 11.6528 12.1536 11.4737 12.1536H2.02535C1.84621 12.1536 1.67441 12.0825 1.54773 11.9561C1.42106 11.8297 1.3499 11.6582 1.3499 11.4794V8.78454C1.34321 8.61033 1.26917 8.44548 1.14332 8.32459C1.01748 8.2037 0.849609 8.13616 0.67495 8.13616C0.500292 8.13616 0.332423 8.2037 0.206577 8.32459C0.0807304 8.44548 0.00669172 8.61033 0 8.78454V11.4794C0.000262969 12.0154 0.213763 12.5293 0.593561 12.9082C0.973359 13.2871 1.48836 13.5 2.02535 13.5H11.4747C12.0118 13.5 12.527 13.287 12.9068 12.9079C13.2866 12.5288 13.5 12.0145 13.5 11.4784V8.78454C13.5 8.60573 13.4288 8.43424 13.3022 8.3078C13.1755 8.18136 13.0037 8.11033 12.8246 8.11033ZM6.27044 9.26272C6.33474 9.32414 6.41059 9.37226 6.49361 9.40429C6.57438 9.43989 6.6617 9.45827 6.75 9.45827C6.8383 9.45827 6.92562 9.43989 7.00639 9.40429C7.08941 9.37226 7.16526 9.32414 7.22956 9.26272L9.92837 6.56788C10.0554 6.44106 10.1268 6.26905 10.1268 6.0897C10.1268 5.91035 10.0554 5.73834 9.92837 5.61152C9.80131 5.4847 9.62899 5.41345 9.44931 5.41345C9.26962 5.41345 9.0973 5.4847 8.97024 5.61152L7.42495 7.1609V0.700034C7.42843 0.609389 7.41355 0.518974 7.3812 0.434204C7.34885 0.349434 7.29969 0.272052 7.23668 0.206691C7.17366 0.141331 7.09807 0.0893364 7.01445 0.053821C6.93082 0.0183057 6.84088 0 6.75 0C6.65912 0 6.56918 0.0183057 6.48555 0.053821C6.40193 0.0893364 6.32634 0.141331 6.26332 0.206691C6.20031 0.272052 6.15115 0.349434 6.1188 0.434204C6.08645 0.518974 6.07157 0.609389 6.07505 0.700034V7.1609L4.52876 5.61053C4.40171 5.48371 4.22939 5.41246 4.0497 5.41246C3.87002 5.41246 3.6977 5.48371 3.57064 5.61053C3.44359 5.73735 3.37221 5.90936 3.37221 6.08871C3.37221 6.26806 3.44359 6.44007 3.57064 6.56689L6.27044 9.26272Z" fill="black"/>
+                </svg>
+        </a>
+    </div>
+
+    <div class="map_container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.6996492860017!2d-6.4525591979703405!3d6.883336296606726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfbbd7ccc3bdd303%3A0x7df4dbb9906bf3dc!2sEcole%20Internationale%20des%20Affaires%20des%20Finances%20et%20de%20la%20Comptabilit%C3%A9%20(EIAFC)!5e0!3m2!1sfr!2sci!4v1727499794712!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer_logo">
+            <div class="logoImg">
+                <img src="./image/logo.jpeg" alt="le logo">
+            </div>
+        </div>
+        <div class="footer_container">
+            <div class="navigations">
+                <h2>navigations</h2>
+                <ul>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        Accueil
+                    </a>
+                </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                            A propos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                            Formations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                            Actualités
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            Galerie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="reseaux">
+                <h2>Suivez-nous sur les reseaux sociaux</h2>
+                <div class="iconsbox">
+                    <a href="">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" fill="none" stroke="#fff" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+                        <g>
+                            <path d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z"/>
+                        </g>
+                        </svg>
+                        Faceboock
+                    </a>
+    
+                    <a href="">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" fill="none" stroke="#fff" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+                        <g>
+                            <path d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"/>
+                            <path d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"/>
+                            <circle cx="18.406" cy="5.594" r="1.44"/>
+                        </g>
+                        </svg>
+                        Instagram
+                    </a>
+    
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        Twiter
+                    </a>
+    
+                    <a href="">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" fill="none" stroke="#fff" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+                        <g id="WA_Logo">
+                            <g>
+                                <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M20.463,3.488C18.217,1.24,15.231,0.001,12.05,0    C5.495,0,0.16,5.334,0.157,11.892c-0.001,2.096,0.547,4.142,1.588,5.946L0.057,24l6.304-1.654    c1.737,0.948,3.693,1.447,5.683,1.448h0.005c6.554,0,11.89-5.335,11.893-11.893C23.944,8.724,22.708,5.735,20.463,3.488z     M12.05,21.785h-0.004c-1.774,0-3.513-0.477-5.031-1.378l-0.361-0.214l-3.741,0.981l0.999-3.648l-0.235-0.374    c-0.99-1.574-1.512-3.393-1.511-5.26c0.002-5.45,4.437-9.884,9.889-9.884c2.64,0,5.122,1.03,6.988,2.898    c1.866,1.869,2.893,4.352,2.892,6.993C21.932,17.351,17.498,21.785,12.05,21.785z M17.472,14.382    c-0.297-0.149-1.758-0.868-2.031-0.967c-0.272-0.099-0.47-0.149-0.669,0.148s-0.767,0.967-0.941,1.166    c-0.173,0.198-0.347,0.223-0.644,0.074c-0.297-0.149-1.255-0.462-2.39-1.475c-0.883-0.788-1.48-1.761-1.653-2.059    s-0.018-0.458,0.13-0.606c0.134-0.133,0.297-0.347,0.446-0.521C9.87,9.97,9.919,9.846,10.019,9.647    c0.099-0.198,0.05-0.372-0.025-0.521C9.919,8.978,9.325,7.515,9.078,6.92c-0.241-0.58-0.486-0.501-0.669-0.51    C8.236,6.401,8.038,6.4,7.839,6.4c-0.198,0-0.52,0.074-0.792,0.372c-0.272,0.298-1.04,1.017-1.04,2.479    c0,1.463,1.065,2.876,1.213,3.074c0.148,0.198,2.095,3.2,5.076,4.487c0.709,0.306,1.263,0.489,1.694,0.626    c0.712,0.226,1.36,0.194,1.872,0.118c0.571-0.085,1.758-0.719,2.006-1.413c0.248-0.694,0.248-1.29,0.173-1.413    C17.967,14.605,17.769,14.531,17.472,14.382z"/>
+                            </g>
+                        </g>
+                        </svg>
+                        Whatsapp
+                    </a>
+                </div>
+                <p style="color: #fff;">
+                    Contacts: 05 05 65 13 02 / 07 04 59 35 29 / 07 57 79 27 51 / 01 01 88 05 51
+                </p>
+            </div>
+    
+            <div class="about">
+                <h2>A propos</h2>
+                <p>&copy;2024-EIAFC Daloa-tous droit réservé</p>
+                <p>
+                    Vous pouvez <a href="./image/fiche_info.jpg" download="fiche de renseignelement EIAFC">télécharger notre fiche d'information</a> pour plus d'informations
+                </p>
+            </div>
+        </div>
+
+
+    </footer>
+    <div class="auteur">
+        <p>t
+            Site web réalisé par <strong>Nitiema Allassane</strong>, étudiant en Informatique Développement d'application à EIAFC Daloa.
+        </p>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
